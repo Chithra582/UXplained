@@ -1,0 +1,26 @@
+name: heuristic-rubric-scorer
+description: Evaluates design challenge submissions across usability, accessibility, hierarchy, and conceptual rigor rubrics.
+parameters:
+  type: object
+  properties:
+    usability_score:
+      type: number
+      description: Usability score component from 0 to 100.
+    accessibility_score:
+      type: number
+      description: Accessibility and WCAG compliance score from 0 to 100.
+    hierarchy_score:
+      type: number
+      description: Visual hierarchy and layout clarity score from 0 to 100.
+    concept_score:
+      type: number
+      description: Conceptual understanding of the target UX law from 0 to 100.
+    challenge_id:
+      type: string
+      description: Identifier of the specific UXplained challenge.
+  required:
+    - usability_score
+    - accessibility_score
+    - hierarchy_score
+    - concept_score
+    - challenge_id

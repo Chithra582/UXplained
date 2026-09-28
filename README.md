@@ -6,6 +6,30 @@
 > Pixel Playground turns classic UI/UX principles into hands-on design challenges you can *see*, *build*, and *feel*.
 > 
 
+<p align="center">
+  <a href="https://opengap.org"><img src="https://img.shields.io/badge/OpenGAP-0.1.0-blue.svg?style=flat-square" alt="OpenGAP 0.1.0"></a>
+  <a href="https://app.hidevs.xyz/passport"><img src="https://img.shields.io/badge/GitAgent%20Passport-Ready-emerald.svg?style=flat-square" alt="GitAgent Passport Ready"></a>
+  <img src="https://img.shields.io/badge/Category-Education-purple.svg?style=flat-square" alt="Category Education">
+  <img src="https://img.shields.io/badge/Compliance-FERPA%20%7C%20GDPR-green.svg?style=flat-square" alt="Compliance FERPA | GDPR">
+</p>
+
+---
+
+## 🤖 GitAgent Passport Qualification
+
+This repository is certified compliant with the **OpenGAP Specification 0.1.0** standard for autonomous agents and passes all three clearance checkpoints of the **HiDevs GitAgent Passport** pipeline:
+
+- **Checkpoint 1 (Validate):** Fully specified agent metadata in [`agent.yaml`](agent.yaml) conforming to OpenGAP 0.1.0 standard schema (Category: `Education`, Data Classification: `internal`, Risk Tier: `standard`).
+- **Checkpoint 2 (Explain):** Cognitive architecture, Hick's and Fitts's ergonomic formulas, WCAG contrast scoring, and compliance mappings documented in [`EXPLAINABILITY.md`](EXPLAINABILITY.md) across all four required sections.
+- **Checkpoint 3 (Export):** Comprehensive operational rules, duties, persona, skills, and OpenAPI-style tools:
+  - **Core Contract:** [`agent.yaml`](agent.yaml)
+  - **Persona & Values:** [`SOUL.md`](SOUL.md)
+  - **Behavioral Directives:** [`RULES.md`](RULES.md)
+  - **Operational Duties:** [`DUTIES.md`](DUTIES.md)
+  - **Explainability & Architecture:** [`EXPLAINABILITY.md`](EXPLAINABILITY.md)
+  - **Modular Skills:** [`skills/ux-laws-evaluator/SKILL.md`](skills/ux-laws-evaluator/SKILL.md), [`skills/fitts-hicks-calculator/SKILL.md`](skills/fitts-hicks-calculator/SKILL.md), [`skills/wcag-accessibility-auditor/SKILL.md`](skills/wcag-accessibility-auditor/SKILL.md), [`skills/design-challenge-grader/SKILL.md`](skills/design-challenge-grader/SKILL.md)
+  - **Tool Specifications:** [`tools/interface-layout-analyzer.yaml`](tools/interface-layout-analyzer.yaml), [`tools/cognitive-load-calculator.yaml`](tools/cognitive-load-calculator.yaml), [`tools/contrast-ratio-checker.yaml`](tools/contrast-ratio-checker.yaml), [`tools/heuristic-rubric-scorer.yaml`](tools/heuristic-rubric-scorer.yaml)
+
 ---
 
 ## 🚀 What is UXplained?

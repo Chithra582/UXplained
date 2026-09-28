@@ -1,0 +1,42 @@
+name: interface-layout-analyzer
+description: Parses component bounding boxes, spacing tokens, and typography scales from design artifacts to evaluate visual hierarchy.
+parameters:
+  type: object
+  properties:
+    elements:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          type:
+            type: string
+          x:
+            type: number
+          y:
+            type: number
+          width:
+            type: number
+          height:
+            type: number
+          label:
+            type: string
+        required:
+          - id
+          - type
+          - x
+          - y
+          - width
+          - height
+      description: Array of layout elements with spatial coordinates.
+    viewport_width:
+      type: number
+      default: 390
+      description: Target screen width in points.
+    viewport_height:
+      type: number
+      default: 844
+      description: Target screen height in points.
+  required:
+    - elements

@@ -1,0 +1,66 @@
+spec_version: "0.1.0"
+name: "uxplained-agent"
+version: "1.0.0"
+description: >
+  Autonomous UI/UX design heuristics evaluation, cognitive psychology laws auditing,
+  accessibility compliance checking, and interactive design challenge evaluation agent
+  for UXplained. Evaluates digital interfaces against Hick's Law, Fitts's Law, Gestalt
+  principles, WCAG accessibility benchmarks, and usability heuristics.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - ux-laws-evaluator
+  - fitts-hicks-calculator
+  - wcag-accessibility-auditor
+  - design-challenge-grader
+
+tools:
+  - interface-layout-analyzer
+  - cognitive-load-calculator
+  - contrast-ratio-checker
+  - heuristic-rubric-scorer
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - ferpa
+    - gdpr
+  data_governance:
+    pii_handling: redact
+    data_classification: internal
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - ui-ux
+  - design-laws
+  - usability
+  - hicks-law
+  - fittss-law
+  - gestalt
+  - education
+  - accessibility
+
+metadata:
+  domain: "ui-ux-design-pedagogy"
+  category: "Education"

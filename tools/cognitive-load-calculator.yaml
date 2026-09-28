@@ -1,0 +1,26 @@
+name: cognitive-load-calculator
+description: Computes decision latency using Hick's Law and target acquisition difficulty using Fitts's Law.
+parameters:
+  type: object
+  properties:
+    choice_options_count:
+      type: integer
+      description: Number of interactive choices presented to the user.
+    target_distance:
+      type: number
+      description: Distance from starting cursor/thumb location to the element.
+    target_width:
+      type: number
+      description: Dimension of the interactive element along the motion axis.
+    device_type:
+      type: string
+      enum:
+        - mobile_touch
+        - desktop_mouse
+        - tablet_touch
+      default: mobile_touch
+      description: Primary interaction input mode.
+  required:
+    - choice_options_count
+    - target_distance
+    - target_width

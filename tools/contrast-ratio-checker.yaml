@@ -1,0 +1,22 @@
+name: contrast-ratio-checker
+description: Computes relative luminance and contrast ratios between colors to verify WCAG 2.1 AA/AAA accessibility compliance.
+parameters:
+  type: object
+  properties:
+    foreground_hex:
+      type: string
+      description: Hex color code of the text or icon element (e.g., #FFFFFF).
+    background_hex:
+      type: string
+      description: Hex color code of the background surface (e.g., #1A1A1A).
+    font_size_pt:
+      type: number
+      default: 16
+      description: Font size in points.
+    is_bold:
+      type: boolean
+      default: false
+      description: Whether the typography uses bold font weight.
+  required:
+    - foreground_hex
+    - background_hex
